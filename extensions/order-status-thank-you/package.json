@@ -1,0 +1,13 @@
+{
+  "name": "order-status-thank-you",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^17.0.0",
+    "@shopify/checkout-ui-extensions-react": "^0.27.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0"
+  }
+}

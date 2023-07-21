@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Extensions Spin App"
+client_id = "extensions-spin-app-1p-app-key"
+application_url = "https://steam-intersection-tue-flashers.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://steam-intersection-tue-flashers.trycloudflare.com/auth/callback",
+  "https://steam-intersection-tue-flashers.trycloudflare.com/auth/shopify/callback",
+  "https://steam-intersection-tue-flashers.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2022-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "development-store-1.shopify.checkout-ui-extension-dev-agencies-14v9.elizabeth-kenyon.us.spin.dev"
