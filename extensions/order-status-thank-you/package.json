@@ -5,7 +5,8 @@
   "license": "UNLICENSED",
   "dependencies": {
     "react": "^17.0.0",
-    "@shopify/checkout-ui-extensions-react": "^0.27.0"
+    "@shopify/ui-extensions": "unstable",
+    "@shopify/ui-extensions-react": "unstable"
   },
   "devDependencies": {
     "@types/react": "^17.0.0"

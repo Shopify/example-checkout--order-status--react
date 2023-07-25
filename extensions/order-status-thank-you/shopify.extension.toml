@@ -12,12 +12,12 @@ handle = "order-status-thank-you"
 # [START order-status.cofig-extension]
 [[extensions.targeting]]
 target = "purchase.thank-you.block.render"
-module = "./src/index.tsx"
+module = "./src/index.jsx"
 export = "thankYouBlock"
 
 [[extensions.targeting]]
 target = "customer-account.order-details.block.render"
-module = "./src/index.tsx"
+module = "./src/index.jsx"
 export = "orderDetailsBlock"
 # [END order-status.cofig-extension]
 
