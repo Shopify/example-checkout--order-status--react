@@ -15,7 +15,7 @@ import {useCallback, useEffect, useState} from 'react';
 const thankYouBlock = reactExtension("purchase.thank-you.block.render", () => <Attribution />);
 export { thankYouBlock };
 
-const orderDetailsBlock = reactExtension("customer-account.order-details.block.render", () => <ProductReview />);
+const orderDetailsBlock = reactExtension("customer-account.order-status.block.render", () => <ProductReview />);
 export { orderDetailsBlock };
 // [END order-status.extension-point]
 // [START order-status.attribution-survey]

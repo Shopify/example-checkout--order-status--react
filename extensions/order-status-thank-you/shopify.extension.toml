@@ -16,7 +16,7 @@ module = "./src/index.jsx"
 export = "thankYouBlock"
 
 [[extensions.targeting]]
-target = "customer-account.order-details.block.render"
+target = "customer-account.order-status.block.render"
 module = "./src/index.jsx"
 export = "orderDetailsBlock"
 # [END order-status.cofig-extension]
