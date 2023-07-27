@@ -43,7 +43,6 @@ function Attribution() {
     return null;
   }
 
-
   return (
     <Survey title="How did you hear about us ?" onSubmit={handleSubmit} loading={loading}>
       <ChoiceList
