@@ -42,8 +42,7 @@ function Attribution() {
   if (attributionSubmitted.loading || attributionSubmitted.data === true) {
     return null;
   }
-// [END order-status.attribution-survey]
-// [START order-status.product-review]
+
   return (
     <Survey title="How did you hear about us ?" onSubmit={handleSubmit} loading={loading}>
       <ChoiceList
@@ -61,8 +60,9 @@ function Attribution() {
     </Survey>
   );
 }
-// [END order-status.product-review]
+// [END order-status.attribution-survey]
 
+// [START order-status.product-review]
 function ProductReview() {
   const [productReview, setProductReview] = useState('');
   const [loading, setLoading] = useState(false);
@@ -109,7 +109,9 @@ function ProductReview() {
     </Survey>
   );
 }
+// [END order-status.product-review]
 
+// [START order-status.survey-component]
 function Survey({
   title,
   description,
@@ -148,6 +150,7 @@ function Survey({
     </View>
   );
 }
+// [END order-status.survey-component]
 
 /**
  * Returns a piece of state that is persisted in local storage, and a function to update it.
