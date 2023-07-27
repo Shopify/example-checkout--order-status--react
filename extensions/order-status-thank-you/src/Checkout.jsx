@@ -112,6 +112,7 @@ function ProductReview() {
 }
 // [END order-status.product-review]
 
+// [START order-status.survey-component]
 function Survey({
   title,
   description,
@@ -150,6 +151,7 @@ function Survey({
     </View>
   );
 }
+// [END order-status.survey-component]
 
 /**
  * Returns a piece of state that is persisted in local storage, and a function to update it.
