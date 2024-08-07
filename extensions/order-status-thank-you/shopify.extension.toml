@@ -1,9 +1,16 @@
-api_version = "2023-10"
+# Learn more about configuring your checkout UI extension:
+# https://shopify.dev/api/checkout-extensions/checkout/configuration
 
+# The version of APIs your extension will receive. Learn more:
+# https://shopify.dev/docs/api/usage/versioning
+
+api_version = "2024-07"
+
+# Gives your extension access to make external network calls, using the
+# JavaScript `fetch()` API. Learn more:
+# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#network-access
 [capabilities]
 api_access = true
-network_access = true
-block_progress = true
 
 [[extensions]]
 type = "ui_extension"
@@ -20,16 +27,3 @@ target = "customer-account.order-status.block.render"
 module = "./src/Checkout.jsx"
 export = "orderDetailsBlock"
 # [END order-status.cofig-extension]
-
-
-# [[extensions.metafields]]
-# namespace = "my-namespace"
-# key = "my-key"
-
-# Read more on extension settings at https://shopify.dev/api/checkout-extensions/checkout/configuration
-# [settings]
-#   [[settings.fields]]
-#   key = "banner_title"
-#   type = "single_line_text_field"
-#   name = "Banner title"
-#   description = "Enter a title for the banner"
